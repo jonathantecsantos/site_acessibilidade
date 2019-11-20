@@ -1,10 +1,18 @@
 div#topo{
 	width: 1200px;
-	height: 100px;
+	height: 200px;
 	border: 1px solid #f00;
 	margin: 0 auto;
-	//background-color: #090;
 }
+div#cabecalho{
+	padding: 10px;
+	width: 600px;
+	margin: 0 auto;
+	float: left;
+	padding: 30px;
+	//background-color: #09f;
+}
+
 div#menu_conteudo{
 	width: 1200px;
 	height: 400px;
@@ -24,4 +32,11 @@ div#rodape{
 	height: 100px;
 	border: 1px solid #f00;
 	margin: 0 auto;
+}
+div#barraAcessibilidade{
+	width: 300px;
+	height: 150px;
+	border: 1px solid #f00;
+	margin: 25px 5px 5px;
+	float: right;
 }

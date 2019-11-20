@@ -3,20 +3,26 @@
 	<head>
 		<!--tags meta ...-->
 		<link rel="stylesheet" href="estilo.css">
+		<script src="../acessibilidade.js" type="text/javascript"></script>
+		<script src="../jquery.js" type="text/javascript"></script>
 		<meta charset="utf-8"/>
 
 		<div id="topo" role=”banner”>
-				<a href="#inicioTopo" id="inicioTopo">Topo</a>
+				<a href="inicioTopo" id="inicioTopo">Topo</a>
+				<div id="cabecalho">
+					<h1 >NOME DA INSTITUIÇÃO</h1>
+				</div>
 				<div id="barraAcessibilidade">     
 					<p>Barra de Acessibilidade</p>     
 						<ul>     
-							<lu><a href="#inicioConteudo">Ir para conteúdo [1]</a></li>     
-							<lu><a href="#inicioMenu">Ir para menu principal [2]</a></li>  
-							<lu><a href="#busca">Ir para Busca [3]</a></li>     
+							<li><a href="#inicioConteudo">Ir para conteúdo [1]</a></li>     
+							<li><a href="#inicioMenu">Ir para menu principal [2]</a></li>  
+							<li><a href="#rodape">Ir para o radapé [3]</a></li>     
 						</ul>
 				</div>
 		</div> 
 	</head>
+
 	<body>        
 		<div id="menu_conteudo">  
 			<div id="menu"  role=”navigation”>
@@ -30,15 +36,15 @@
 			</div>
 			<div id="conteudo" role="main">
 				    
-				<a href="#inicioConteudo" id="inicioConteudo" accesskey="1">Conteúdo</a>      
+				<a href="#inicioConteudo" id="inicioConteudo" accesskey="1" class="oculto">Conteúdo</a>      
 					<h2>BEM VINDO</h2>     
 						<p>Seja bem vindo ao nosso site.</p> 
 			</div>             
 		</div>	
 	</body>
 	<div id="rodape" role="contentinfo">                
-		<a href="#inicioRodape" id="inicioRodape">Rodapé</a>    
+		<a href="#inicioRodape" id="inicioRodape" accesskey="3">Rodapé</a>    
 			<address> Rua XXX</address> 
 	</div> 
-	</html>
+</html>
 						
