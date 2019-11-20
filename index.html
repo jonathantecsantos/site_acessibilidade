@@ -1,40 +1,68 @@
-<div id="topo">     
-	<a href="#inicioTopo" id="inicioTopo" aligin="Left">Topo</a>     
-		<h1>NOME DA INSTITUIÇÃO</h1>
-  
-			<div id="barraAcessibilidade">     
-				<p>Barra de Acessibilidade</p>     
-					<ul>     
-						<li><a href="#inicioConteudo">Ir para conteúdo [1]</a></li>     
-						<li><a href="#inicioMenu">Ir para menu principal [2]</a></li>  
-						<li><a href="#busca">Ir para Busca [3]</a></li>     
-					</ul>    
-			</div>     
-</div>    
-<div id="menu">     
-	<a href="#inicioMenu" id="inicioMenu" accesskey="2">Menu</a>     
-		<ul>     
-			<li>Itens de menu</li>     
-			<li>...</li>     
-		</ul>     
-</div>   
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!--tags meta ...-->
+		<link rel="stylesheet" href="estilo.css">
+		<script src="../acessibilidade.js" type="text/javascript"></script>
+		<script src="../jquery.js" type="text/javascript"></script>
+		<meta charset="utf-8"/>
 
-<div id="conteudo">     
-	<a href="#inicioConteudo" id="inicioConteudo" accesskey="1">Conteúdo</a>  
-		<form action="#" method="post">     
-			<fieldset>     
-				<legend>Buscar</legend>     
-				<label for="busca">Pesquise aqui</label>     
-					<input type="text" id="busca" name="busca" accesskey="3" value="Pesquise aqui" />     
-					<input type="submit" value="Buscar" class="buscar" name="buscar" />     
-			</fieldset>     
-		</form>     
-		<h2>BEM VINDO</h2>     
-			<p>Seja bem vindo ao nosso site.</p>     
-</div> 
-    
-<div id="rodape">     
-	<a href="#inicioRodape" id="inicioRodape">Rodapé</a>    
-		<address> Rua XXX</address>     
-</div>
+		<div id="topo" role=”banner”>
+				<div id="cabecalho">
+					<h1>NOME DA INSTITUIÇÃO</h1>
+				</div>
+				<div id="barraAcessibilidade">     
+					<p>Barra de Acessibilidade</p>     
+						<ul>     
+							<li><a href="index.html#conteudo">Ir para conteúdo [Alt+1]</a></li>     
+							<li><a href="index.html#inicioMenu">Ir para menu principal [Alt+2]</a></li>  
+							<li><a href="index.html#rodape">Ir para o radapé [Alt+3]</a></li>     
+						</ul>
+				</div>
+		</div> 
+	</head>
+
+	<body>        
+		<div id="menu_conteudo">  
+			<div id="menu"  role=”navigation”>
+				<a href="#inicioMenu" id="inicioMenu" accesskey="2">Menu</a>
+				<ul>
+					<li><a href="menu1.html">Quem Somos</a></li>
+						<li><a href="menu2.html">O que fazemos</a></li>
+						<li><a href="menu3.html">Acesso a informação</a></li>
+						<li><a href="menu4.html">Contato</a></li>
+					</ul>
+			</div>
+			<div id="conteudo" role="main">
+				    
+				<a href="#inicioConteudo" id="inicioConteudo" accesskey="1" class="oculto">Conteúdo</a>      
+					<h2>Notícias</h2>     
+						<title>Falha na câmera do Android permitia que hackers espionassem sua vida pessoal.</title>
+						<p>Uma nova vulnerabilidade encontrada pelos pesquisadores da Checkmarx e que foi revelada publicamente nesta terça-feira (19) deve colocar milhões de usuários Android em alerta, já que ela permite que aplicativos tenham acesso à câmera dos smartphones sem a permissão expressa dos usuários.</p>
+
+						<center>
+							<img src="imagens/android.jpg" alt="Imagem: Pessoa segurando um smartphone Android" width="400"/>
+						</center>
+
+						<p>A partir dessa falha, apps que, em seus termos de uso, não necessitariam do acesso à câmera, conseguiriam usar da brecha para abrir o Google Camera e o Samsung Camera e, assim, tirar fotos, gravar vídeos e até extrair dados de localização GPS sem a permissão ou mesmo conhecimento do dono do celular.</p>
+
+						<p>Normalmente, para se ter acesso à câmera do aparelho, um aplicativo precisa que o usuário conceda a ele permissão para acessar a câmera, gravar áudio e acessar a localização GPS do dispositivo. No entanto, a falha batizada pela Checkmarx de CVE-2019-2234 permitia que qualquer app que tivesse a permissão para armazenar e acessar arquivos na memória interna do smartphone e nos cartões SD do aparelh tivesse caminho livre para executar os aplicativos de câmera da Google e da Samsung como bem entendessem, desde que, obviamente, estivessem instalados no telefone. E, como qualquer foto tirada pelo celular também possui metadados de GPS, também seria possível ter acesso à localização do aparelho.</p>
+
+						<p>Assim, um cibercriminoso poderia criar um aplicativo inocente, como um organizador de cartão SD, um joguinho de corrida ou mesmo um app de previsão do tempo, e a partir dele ter acesso total à câmera do aparelho remotamente, podendo tirar fotos e gravar vídeos comprometedores que poderiam ser usados para chantagens. Isso porque a permissão de acesso para armazenar e acessar arquivos é o tipo mais comum para qualquer app.</p>
+
+						<p>Essa vulnerabilidade foi revelada para a Google no dia 4 de julho deste ano, e a empresa já reconheceu que ela era um problema crítico. Tanto que já disponibilizou uma atualização para os aplicativos que resolve o problema.</p>
+
+						<p>"Agradecemos à Checkmarx por chamar a atenção [para o problema] e por trabalhar com parceiros do Google e do Android para coordenar a descoberta. A vulnerabilidade aconteceu com dispositivos Google após uma atualização da Play Store para o app Google Camera em julho de 2019. Um patch já foi disponibilizado para todos os parceiros", revela a companhia.</p>
+
+
+<a href="index.html#inicioMenu">Ir para menu principal [2]</a>
+
+			</div>             
+		</div>	
+	</body>
+	<div id="rodape" role="contentinfo">                
+		<a href="#inicioRodape" id="inicioRodape" accesskey="3">Rodapé</a>    
+			<address> Alguns direitos reservados</address> 
+	</div> 
+</html>
 						

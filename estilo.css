@@ -1,7 +1,7 @@
 div#topo{
 	width: 1200px;
 	height: 200px;
-	border: 1px solid #f00;
+	border: 1px solid #87CEFA;
 	margin: 0 auto;
 }
 div#cabecalho{
@@ -15,14 +15,15 @@ div#cabecalho{
 
 div#menu_conteudo{
 	width: 1200px;
-	height: 400px;
-	border: 1px solid #f00;
+	height: 1500px;
+	border: 1px solid #87CEFA;
 	margin: 0 auto;
 }
+
 div#menu{
 	width: 200px;
-	height: 400px;
-	border: 1px solid #f00;
+	height: 1500px;
+	border: 1px solid #87CEFA;
 	margin: 0 auto;
 	float: left;
 	//background-color: #09f;
@@ -30,13 +31,13 @@ div#menu{
 div#rodape{
 	width: 1200px;
 	height: 100px;
-	border: 1px solid #f00;
+	border: 1px solid #87CEFA;
 	margin: 0 auto;
 }
 div#barraAcessibilidade{
 	width: 300px;
 	height: 150px;
-	border: 1px solid #f00;
+	border: 1px solid #87CEFA;
 	margin: 25px 5px 5px;
 	float: right;
 }
